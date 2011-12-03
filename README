@@ -1,0 +1,50 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3833
+
+== description
+otl-asciidoc implements outliner support for asciidoc. It is based on the great "TVO: The Vim Outliner" (http://www.vim.org/scripts/script.php?script_id=517), just adds a few code lines to the original otl.vim script. If you like "TVO: The Vim Outliner" and/or are used to asciidoc, try this script.
+
+== usage
+It provides outliner capability for asciidoc, which further ease and accelerate documentation in asciidoc.
+=== Keystrokes
+To be compatible with TVO, type "help otl" or see README.otl in the vimoutliner-122.zip
+==== Supported ones
+Many commonly used keystrokes are supported, such as:
+. Heading folding
+	=	open heading (zo)
+	-	close heading (zc)
+	Display operations
+		\1	show level 1
+		\2	show level 2
+		\3	show level 3
+		\4	show level 4
+		\5	show level 5
+		\a	show all
+. Heading operations
+	\k	move cursor up one heading
+	\j	move cursor down one heading
+	\u	move heading up one
+	\d	move heading down one
+
+==== Not supported ones
+. Display operations
+	\8	show level 8
+	\9	show level 9
+	\t	toggle showing text
+	\C	change the current heading
+	\D	delete the current heading
+. ... 
+
+=== screenshots
+Not yet.
+=== Compatibility
+==== Affect to otl style
+It will not affect editing and operation in .otl 
+==== Supported asciidoc format
+. Both one line heading and two lines heading mode are supported
+. Part of list styles are supported
+. Page break(<<<) is highlighted
+. Highlighting words(TODO, Note, Important, Warning, Caution) are supported
+
+== Notes
+The sole purpose of publishing this script is to share the happiness of writing with the advantage of outliner and asciidoc both.
+This script is based on Ned Konz's TVO: The Vim Outliner. Email inquiry for permission of publishing this derived version had been sent to Ned, but there is no response yet. Let me know anything inappropriate with this.
